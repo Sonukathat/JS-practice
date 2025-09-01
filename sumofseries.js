@@ -7,4 +7,4 @@ for (let i = 1; n >= i; i++) {
     total=sum;
 }
 
-console.log(total);
+console.log(total); 
