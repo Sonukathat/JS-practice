@@ -1,6 +1,6 @@
 let a = 0;
 let b = 1;
-let n = 50;
+let n = 20;
 
 
 if (n == 0) {
