@@ -15,12 +15,29 @@
 //     console.log("not palindrome");
 // }
 
-let n = 24545;
+// let n = 24545;
+// let m=n;
+// let pali=0;
+// let res=0;
+
+// for (;n > 0;) {
+//     pali  = n%10;
+//     res = res*10+pali;
+//     n=Math.floor(n/10);
+// }
+
+// if(m==res){
+//     console.log("palindrome")
+// }else{
+//     console.log("not palindrome");
+// }
+
+let n = 24546;
 let m=n;
 let pali=0;
 let res=0;
 
-for (;n > 0;) {
+while (n > 0) {
     pali  = n%10;
     res = res*10+pali;
     n=Math.floor(n/10);
