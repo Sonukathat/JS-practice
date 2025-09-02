@@ -43,10 +43,10 @@
 
 
 
-let arr = [10, 6, 9, 15, 44, 44, 33, 90, 88]
+let arr = [10, 6, 9, 15, 44, 44, 33, 90, 88];
 
 let max = -Infinity;
-let smax = -Infinity
+let smax = -Infinity;
 
 for (let i = 0; i < arr.length; i++) {
     if (arr[i] > max) {
@@ -59,4 +59,4 @@ for (let i = 0; i < arr.length; i++) {
 }
 
 console.log(max);
-console.log(smax)
+console.log(smax);
