@@ -1,10 +1,13 @@
-let str = 'helloworld'
-let vowel=0;
+let str = 'helloworld';
+let vowel = 0;
 
 for (let i = 0; i < str.length; i++) {
-    if (str[i].toString == 'A' || 'E' || 'I' || 'O' || 'U' || 'a' || 'e' || 'i' || 'o' || 'u'){
+    if (
+        str[i] === 'A' || str[i] === 'E' || str[i] === 'I' || str[i] === 'O' || str[i] === 'U' ||
+        str[i] === 'a' || str[i] === 'e' || str[i] === 'i' || str[i] === 'o' || str[i] === 'u'
+    ) {
         vowel++;
     }
 }
 
-console.log(vowel);
+console.log(vowel); 
