@@ -9,4 +9,4 @@ for (let char of str) {
     }
 }
 
-console.log(freq)
+console.log(freq);
