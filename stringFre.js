@@ -1,20 +1,12 @@
 let str = 'helloworld';
-let c = 1;
+let freq = {};
 
-
-
-for (i = 0; i < str.length; i++) {
-    let allreadyCount = false;
-    for (j = i + 1; j < str.length; j++) {
-        if (allreadyCount==false) {
-            if (str[i] === str[j]) {
-                c++;
-            }
-        }
+for (let char of str) {
+    if (freq[char]) {
+        freq[char]++;
+    } else {
+        freq[char] = 1;
     }
-    allreadyCount = true;
-    
-    console.log(str[i], c);
 }
 
-// this question is not completed
+console.log(freq)
