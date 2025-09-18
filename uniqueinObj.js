@@ -26,16 +26,26 @@ let arr = [
 // }
 
 
-for(let i=0;i<arr.length;i++){
-    for(let j=i+1;j<arr.length;j++){
-        if(arr[i].name===arr[j].name){
-            arr.splice(j,1);
-            // console.log(arr)
-            j--;
-        }
+// for(let i=0;i<arr.length;i++){
+//     for(let j=i+1;j<arr.length;j++){
+//         if(arr[i].name===arr[j].name){
+//             arr.splice(j,1);
+//             // console.log(arr)
+//             j--;
+//         }
+//     }
+// }
+
+let set = new Set()
+
+let newArr = arr.filter((item)=>{
+    if(set.has(item.name)){
+        return false;
+    }else{
+        set.add(item.name)
+        return true;
     }
-}
+})
+console.log(newArr)
 
-console.log(arr)
-
-
+// console.log(set);
