@@ -8,19 +8,7 @@ let arr = [
 ]
 
 
-for(let i=0;i<arr.length;i++){
-    for(let j=i+1;j<arr.length;j++){
-        if(arr[i].name===arr[j].name){
-            arr.splice(j,1);
-            console.log(arr)
-            j--;
-        }
-    }
-}
-
-console.log(arr)
-
-// let arr2 = [...new Set(arr)]
+//let arr2 = [...new Set(arr)]
 
 // for (let i = 0; i < arr.length; i++) {
 
@@ -36,4 +24,18 @@ console.log(arr)
 //         arr2.push(arr[i])
 //     }
 // }
+
+
+for(let i=0;i<arr.length;i++){
+    for(let j=i+1;j<arr.length;j++){
+        if(arr[i].name===arr[j].name){
+            arr.splice(j,1);
+            // console.log(arr)
+            j--;
+        }
+    }
+}
+
+console.log(arr)
+
 
