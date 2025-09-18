@@ -1,29 +1,39 @@
 let arr = [
     { id: 1, name: "Shivam" },
-    { id: 2, name: "Priya" },
+    { id: 2, name: "sonu" },
     { id: 3, name: "Shivam" },
-    { id: 4, name: "Aman" },
-    { id: 4, name: "sonu" },
-    { id: 4, name: "Ahil" },
-    { id: 4, name: "summer" },
-    { id: 4, name: "sonu" }
+    { id: 4, name: "neeraj" },
+    { id: 5, name: "Shivam" },
+    { id: 6, name: "Shivam" },
 ]
 
-let arr2 = []
 
-for (let i = 0; i < arr.length; i++) {
-
-    let count = 0;
-
-    for (j = 0; j < arr.length; j++) {
-        if (arr[i].name === arr[j].name) {
-            count++;
+for(let i=0;i<arr.length;i++){
+    for(let j=i+1;j<arr.length;j++){
+        if(arr[i].name===arr[j].name){
+            arr.splice(j,1);
+            console.log(arr)
+            j--;
         }
-    }
-
-    if(count===1){
-        arr2.push(arr[i])
     }
 }
 
-console.log(arr2)
+console.log(arr)
+
+// let arr2 = [...new Set(arr)]
+
+// for (let i = 0; i < arr.length; i++) {
+
+//     let count = 0;
+
+//     for (j = 0; j < arr.length; j++) {
+//         if (arr[i].name === arr[j].name) {
+//             count++;
+//         }
+//     }
+
+//     if(count===1 || count===2){
+//         arr2.push(arr[i])
+//     }
+// }
+
