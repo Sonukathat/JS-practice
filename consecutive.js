@@ -1,6 +1,6 @@
 let arr = [1,1,0,1,3,1,1,1,1];
 
-let max = -Infinity;
+let max = 0;
 let count=0;
 
 for(let i=0;i<arr.length;i++){
