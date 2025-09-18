@@ -1,4 +1,4 @@
-let arr = [-10,1,2,-10,5,3];
+let arr = [-10,10,3,4,5];
 
 let newArr = arr.map((item)=>Math.abs(item))
 
