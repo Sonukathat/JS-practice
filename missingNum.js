@@ -1,4 +1,6 @@
-let arr = [1,2,3,4,5,6,7,9]
+let arr = [9,2,6,3,7,1,5,4]
+
+arr.sort((a,b)=>a-b);
 
 for(let i=1;i<arr.length+1;i++){
     if(!arr.includes(i)){
