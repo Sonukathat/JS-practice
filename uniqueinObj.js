@@ -47,5 +47,3 @@ let newArr = arr.filter((item)=>{
     }
 })
 console.log(newArr)
-
-// console.log(set);
