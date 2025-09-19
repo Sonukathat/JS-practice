@@ -1,3 +1,3 @@
-let arr=[4,1,9,[10,[88,34],94],98,[46,23],34]
+let arr=[4,1,9,[10,94],98,[46,23],34]
 
-console.log(arr.flat(Infinity))
+console.log(arr.flat().sort((a,b)=>a-b))
