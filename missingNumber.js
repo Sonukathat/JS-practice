@@ -1,5 +1,9 @@
-let arr = [1,8,3,6,2,5,7]
+let arr = [20];
 
-let arr2=arr.sort((a,b)=>b-a);
+let arr2 = arr.sort((a,b)=>a-b);
 
-console.log(arr2)
+for(let i=1; i <= Math.max(...arr); i++){
+    if(!arr2.includes(i)){
+        console.log(i);
+    }
+}
