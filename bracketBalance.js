@@ -11,7 +11,7 @@ function checkBracket(str) {
         if (char === '(' || char === '{' || char === '[') {
             store.push(char);
         } else if (char === ')' || char === '}' || char === ']') {
-            if (store.pop() !== bracket[char]) {
+            if (store.pop() === bracket[char]) {
                 return false
             }
         }
