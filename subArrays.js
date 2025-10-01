@@ -30,7 +30,7 @@ let arr = [1, 2, 3, 4, 5];
 
 for (let i = 0; i < arr.length; i++) {
     for (let j = i; j < arr.length; j++) {
-       let  subAr = arr.slice(i,j+1);
+        let subAr = arr.slice(i, j + 1);
         console.log(subAr);
     }
 }
