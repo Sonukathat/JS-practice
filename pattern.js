@@ -8,10 +8,17 @@
 //     console.log();
 // }
 
-for(let i=7;i>=1;i--){
-    for(let j=1;j<=i;j++){
-        // console.log("*")
-        process.stdout.write("*");
-    }
-    console.log();
+// for(let i=7;i>=1;i--){
+//     for(let j=1;j<=i;j++){
+//         // console.log("*")
+//         process.stdout.write("*");
+//     }
+//     console.log();
+// }
+
+let str="";
+
+for(let i=0;i<7;i++){
+    str+="*"
+    console.log(str);
 }
