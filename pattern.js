@@ -25,10 +25,24 @@
 
 // let str=''
 
-for(let i=7;i>=0;i--){
-    let str=''
-    for(let j=0;j<i;j++){
-        str+="*"
+// for(let i=7;i>=0;i--){
+//     let str=''
+//     for(let j=0;j<i;j++){
+//         str+="*"
+//     }
+//     console.log(str)
+// }
+
+let n=5;
+
+for(let i=1;i<=n;i++){
+    let str='';
+    for(let j=1;j<=n;j++){
+        if(j<=n-i){
+            str+=" "
+        }else{
+            str+="*"
+        }
     }
-    console.log(str)
+    console.log(str);
 }
